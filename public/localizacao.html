@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link href="/src/style.css" rel="stylesheet">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        green: '#bfd9cd',
+                        bg_green: '#cdd4d1',
+                        light_green: '#A8FBD3',
+                        dark_green: '#3D8D7A',
+                        light_yellow: '#FAEAB1',
+                        soft_white: '#FAF8F1',
+                        orange: '#E2A16F',
+                        pink: '#F2AEBB',
+                        bg_text: '#b8d1ae',
+                        bg_white: '#fafcfc',
+                        soft_green: '#f0faf3'
+                    },
+                    fontFamily: {
+                        mont: ['Montserrat', 'sans-serif'],
+                        open: ['Open Sans', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+</head>
+<body>
+    <section class="w-full min-h-screen py-16 bg-bg_white">
+        <div class=" flex flex-col justify-center items-center gap-12">
+            <!-- Textos -->
+            <div class="flex flex-col justify-center items-center gap-6 md:gap-4">
+                <h2 class="text-lg md:text-sm text-dark_green font-semibold">LOCALIZAÇÃO</h2>
+                <h1 class="text-5xl font-light line-clamp-3">Onde nos <strong class="text-dark_green"> <br> Encontrar</strong></h1>
+                <p class="text-xl md:text-lg font-light text-center px-2">Estamos prontos para receber você em nosso espaço acolhedor</p>
+            </div>
+            <!-- informações -->
+            <div class="flex flex-col lg:flex-row justify-center items-center md:px-8 gap-12 lg:gap-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 md:grid-rows-2 gap-6">
+                    <div class="flex flex-col gap-4 bg-bg_white border border-slate-200 w-full h-full sm:h-[90%] md:h-full rounded-xl group hover:shadow-xl transition-all duration-700 p-8">
+                        <div class="bg-gradient-to-br from-light_green to-dark_green w-16 h-16 rounded-2xl flex justify-center items-center shadow-xl group-hover:scale-110 transition-all duration-700">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin-icon lucide-map-pin"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
+                        </div>
+                        <div class="flex flex-col justify-center items-start gap-2">
+                            <h1 class="text-lg sm:text-base font-semibold">ENDEREÇO</h1>
+                            <div class="flex flex-col">
+                                <p class="text-base sm:text-sm font-light text-gray-700">Rua das Flores, 123 - Jardins</p>
+                                <p class="text-base sm:text-sm font-light text-gray-700">São Paulo, SP - CEP 01234-567</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-4 bg-bg_white border border-slate-200 w-full h-full sm:h-[90%] md:h-full rounded-xl group hover:shadow-xl transition-all duration-700 p-8">
+                        <div class="bg-gradient-to-br from-pink to-light_green w-16 h-16 rounded-2xl flex justify-center items-center shadow-xl group-hover:scale-110 transition-all duration-700">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock3-icon lucide-clock-3"><path d="M12 6v6h4"/><circle cx="12" cy="12" r="10"/></svg>
+                        </div>
+                        <div class="flex flex-col justify-center items-start gap-2">
+                            <h1 class="text-lg sm:text-base font-semibold">HORÁRIO DE FUNCIONAMENTO</h1>
+                            <div class="flex flex-col">
+                                <p class="text-base sm:text-sm font-light text-gray-700">Segunda a Sexta: 8h às 20h</p>
+                                <p class="text-base sm:text-sm font-light text-gray-700">Sábado: 8h às 14h</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-4 bg-bg_white border border-slate-200 w-full h-full sm:h-[90%] md:h-full rounded-xl group hover:shadow-xl transition-all duration-700 p-8">
+                        <div class="bg-gradient-to-br from-dark_green to-orange w-16 h-16 rounded-2xl flex justify-center items-center shadow-xl group-hover:scale-110 transition-all duration-700">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone-icon lucide-phone"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/></svg>
+                        </div>
+                        <div class="flex flex-col justify-center items-start gap-2">
+                            <h1 class="text-lg sm:text-base font-semibold">TELEFONE</h1>
+                            <div class="flex flex-col">
+                                <p class="text-base sm:text-sm font-light text-gray-700">(11) 1234-5678</p>
+                                <p class="text-base sm:text-sm font-light text-gray-700">(11) 1234-5678</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-4 bg-bg_white border border-slate-200 w-full h-full sm:h-[90%] md:h-full rounded-xl group hover:shadow-xl transition-all duration-700 p-8">
+                        <div class="bg-gradient-to-br from-orange to-light_green w-16 h-16 rounded-2xl flex justify-center items-center shadow-xl group-hover:scale-110 group-hover transition-all duration-700">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail-icon lucide-mail"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7"/><rect x="2" y="4" width="20" height="16" rx="2"/></svg>
+                        </div>
+                        <div class="flex flex-col justify-center items-start gap-2">
+                            <h1 class="text-lg font-semibold">EMAIL</h1>
+                            <div class="flex flex-col">
+                                <p class="text-base font-light text-gray-700">contato@exemplo.com</p>
+                                <p class="text-base font-light text-gray-700">suporte@exemplo.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Mapa -->
+                <div class="flex justify-center items-center">
+                    <div class="flex flex-col justify-center items-center gap-4 bg-gradient-to-br from-light_green to-light_yellow w-[90vw] h-[70vh] sm:w-[40vw] rounded-xl shadow-xl">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#3D8D7A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin-icon lucide-map-pin"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
+                        <h1 class="text-2xl">Mapa da Localização</h1>
+                        <p class="text-lg font-light text-center px-12 md:px-6">Nosso consultório fica no coração dos Jardins, com fácil acesso e estacionamento próximo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
