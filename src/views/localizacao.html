@@ -1,52 +1,13 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
-    <link href="/src/style.css" rel="stylesheet">
-    <style>
-    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-    </style>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        green: '#bfd9cd',
-                        bg_green: '#cdd4d1',
-                        light_green: '#A8FBD3',
-                        dark_green: '#3D8D7A',
-                        light_yellow: '#FAEAB1',
-                        soft_white: '#FAF8F1',
-                        orange: '#E2A16F',
-                        pink: '#F2AEBB',
-                        bg_text: '#b8d1ae',
-                        bg_white: '#fafcfc',
-                        soft_green: '#f0faf3'
-                    },
-                    fontFamily: {
-                        mont: ['Montserrat', 'sans-serif'],
-                        open: ['Open Sans', 'sans-serif']
-                    }
-                }
-            }
-        }
-    </script>
-
-</head>
 <body>
-    <section class="w-full min-h-screen py-16 bg-bg_white">
+    <section id="localizacao" class="w-full min-h-screen py-16 bg-bg_white">
         <div class=" flex flex-col justify-center items-center gap-12">
-            <!-- Textos -->
+           
             <div class="flex flex-col justify-center items-center gap-6 md:gap-4">
                 <h2 class="text-lg md:text-sm text-dark_green font-semibold">LOCALIZAÇÃO</h2>
                 <h1 class="text-5xl font-light line-clamp-3">Onde nos <strong class="text-dark_green"> <br> Encontrar</strong></h1>
                 <p class="text-xl md:text-lg font-light text-center px-2">Estamos prontos para receber você em nosso espaço acolhedor</p>
             </div>
-            <!-- informações -->
+            
             <div class="flex flex-col lg:flex-row justify-center items-center md:px-8 gap-12 lg:gap-8">
                 <div class="grid grid-cols-1 md:grid-cols-2 md:grid-rows-2 gap-6">
                     <div class="flex flex-col gap-4 bg-bg_white border border-slate-200 w-full h-full sm:h-[90%] md:h-full rounded-xl group hover:shadow-xl transition-all duration-700 p-8">
@@ -98,16 +59,14 @@
                         </div>
                     </div>
                 </div>
-                <!-- Mapa -->
+
                 <div class="flex justify-center items-center">
-                    <div class="flex flex-col justify-center items-center gap-4 bg-gradient-to-br from-light_green to-light_yellow w-[90vw] h-[70vh] sm:w-[40vw] rounded-xl shadow-xl">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="#3D8D7A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin-icon lucide-map-pin"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg>
-                        <h1 class="text-2xl">Mapa da Localização</h1>
-                        <p class="text-lg font-light text-center px-12 md:px-6">Nosso consultório fica no coração dos Jardins, com fácil acesso e estacionamento próximo.</p>
-                    </div>
+                    <div id="map" class="w-[90vw] h-[70vh] sm:w-[40vw] rounded-xl shadow-xl"></div>
                 </div>
             </div>
         </div>
     </section>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    
 </body>
-</html>
