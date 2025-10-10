@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    
+     
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
-    <link href="/src/style.css" rel="stylesheet">
+
     <style>
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
     </style>
@@ -41,8 +41,8 @@
 <body>
     <section class="w-full min-h-screen bg-gradient-to-br from-soft_white via-green to-light_yellow ">
      
-        <nav class="menuBtn w-full h-[15vh] sm:h-[20vh] px-8 py-12 md:px-12">
-            <div class="menu flex flex-row justify-between items-center w-full py-4">
+        <nav class="menuBtn w-full h-[15vh] sm:h-[20vh] px-8">
+            <div class="menu flex flex-row justify-between items-center w-full py-6">
   
                 <div class="flex flex-row items-center gap-4">
                     <div class="flex justify-center items-center w-12 h-12 rounded-full bg-gradient-to-br from-light_green to-dark_green hover:scale-110 cursor-pointer transition-all duration-300">
@@ -50,13 +50,13 @@
                             <path d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2"/>
                         </svg>
                     </div>
-                    <h2 class="text-2xl font-light">Fisioterapia & Pilates</h2>
+                    <h2 class="text-xl md:text-2xl font-light">Fisioterapia & Pilates</h2>
                 </div>
 
                 <div class="relative md:flex md:items-center">
                 
                     <div class="md:hidden flex justify-center items-center w-16 h-12 ml-4">
-                        <button id="menu-toggle" class="text-2xl">
+                        <button id="menu-toggle" class="text-2xl focus:outline-none md:hidden">
                             <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                 <path d="M3 5h18"/>
                                 <path d="M3 12h18"/>
@@ -65,44 +65,50 @@
                         </button>
                     </div>
 
-                    <div id="menu" class="hidden absolute left-0 mt-2 w-fit flex flex-col gap-6 bg-green-200 backdrop-blur-md border border-green-400 rounded-lg shadow-lg
+                    <div class="hidden absolute left-0 mt-2 w-fit flex flex-col gap-6 bg-green-200 backdrop-blur-md border border-green-400 rounded-lg shadow-lg
                                         md:static md:flex md:flex-row md:gap-8 md:bg-transparent md:border-none md:backdrop-blur-0 md:shadow-none md:w-auto text-2xl md:text-lg font-light">
                         <a href="#index" data-page="index" class="relative hover:text-dark_green after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-dark_green after:transition-all after:duration-500 hover:after:w-full">Início</a>
                         <a href="#sobre" data-page="sobre" class="relative hover:text-dark_green after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-dark_green after:transition-all after:duration-500 hover:after:w-full">Sobre</a>
                         <a href="#formacoes" data-page="formacoes" class="relative hover:text-dark_green after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-dark_green after:transition-all after:duration-500 hover:after:w-full">Formações</a>
                         <a href="#servicos" data-page="servicos" class="relative hover:text-dark_green after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-dark_green after:transition-all after:duration-500 hover:after:w-full">Serviços</a>
                         <a href="#localizacao" data-page="localizacao" class="relative hover:text-dark_green after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-dark_green after:transition-all after:duration-500 hover:after:w-full">Localização</a>
-                        <a href="#contatodois" data-page="contatodois" class="relative hover:text-dark_green after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-dark_green after:transition-all after:duration-500 hover:after:w-full">Contato</a>
+                        <a href="#contato" data-page="contato" class="relative hover:text-dark_green after:content-[''] after:absolute after:left-0 after:-bottom-1 after:w-0 after:h-[2px] after:bg-dark_green after:transition-all after:duration-500 hover:after:w-full">Contato</a>
                     </div>
                 </div>
             </div>
-
-
         </nav>
+                <div id="menu"
+                    class="hidden md:hidden flex-col bg-green-200 w-full h-[40vh] absolute px-4 items-start shadow-lg transition-all duration-300 ease-in-out">
+                    <a href="#" data-page="sobre" class="py-3 border-b border-gray-700 hover:bg-gray-700">Sobre</a>
+                    <a href="#" data-page="formacoes" class="py-3 border-b border-gray-700 hover:bg-gray-700">Formações</a>
+                    <a href="#" data-page="servicos" class="py-3 border-b border-gray-700 hover:bg-gray-700">Serviços</a>
+                    <a href="#" data-page="localizacao" class="py-3 border-b border-gray-700 hover:bg-gray-700">Localização</a>
+                    <a href="#" data-page="contato" class="py-3 hover:bg-gray-700">Contato</a>
+                </div>
 
-      <main id="content" class="w-full min-h-screen"> 
+      <main id="content" class="w-full min-h-screen pt-8 md:pt-0 relative"> 
         <section id="index">
         <div class="flex flex-col md:flex-row justify-center items-center gap-4">
             <div class="flex flex-col justify-center items-start w-[85%] sm:w-[40%]">
                 <div class="flex flex-col justify-center items-start gap-4">
-                    <h1 class="flex flex-col text-7xl font-light">Movimento é <strong class="text-dark_green font-light"> Vida</strong> </h1>
-                    <p class="text-2xl font-light text-gray-800">
+                    <h1 class="flex flex-col text-6xl md:text-7xl font-light">Movimento é <strong class="text-dark_green font-light"> Vida</strong> </h1>
+                    <p class="text-xl md:text-2xl font-light text-gray-800">
                         Fisioterapia personalizada e Pilates para transformar seu bem-estar e qualidade de vida.
                     </p>
                 </div>
 
                 <div class="flex flex-col md:flex-row items-start gap-6 mt-8 mb-12 w-full">
                     <a href="#"
-                        class="flex justify-center items-center w-[90%] h-16 md:w-[40%] md:h-12 
+                        class="flex justify-center items-center w-[90%] h-12 md:w-[40%] md:h-12 
                                 bg-gradient-to-r from-dark_green to-light_green rounded-full 
-                                text-2xl sm:text-xl text-soft_white hover:shadow-lg 
+                                text-xl sm:text-xl text-soft_white hover:shadow-lg 
                                 transition-all duration-300 ease-in-out">
                         Agende sua Consulta
                     </a>
 
                     <a href="#"
-                        class="flex justify-center items-center w-[90%] h-16 md:w-[40%] md:h-12 
-                                bg-soft_white rounded-full text-2xl sm:text-xl text-dark_green 
+                        class="flex justify-center items-center w-[90%] h-12 md:w-[40%] md:h-12 
+                                bg-soft_white rounded-full text-xl sm:text-xl text-dark_green 
                                 border border-dark_green hover:bg-dark_green hover:text-soft_white hover:shadow-lg 
                                 transition-all duration-300 ease-in-out">
                         Conheça os Serviços
@@ -138,6 +144,9 @@
                 <p class="text-sm text-gray-500 text-center">© 2024 Todos os direitos reservados</p>
         </div>
     </footer>
-    <script src="../src/js/router.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script type="module" src="../src/js/router.js"></script>
+    
 </body>
 </html>
